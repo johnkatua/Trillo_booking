@@ -2,6 +2,8 @@ import React from 'react'
 
 import './collection.scss';
 
+import photo1 from '../../images/user-1.jpg';
+import photo2 from '../../images/user-2.jpg';
 import photo3 from '../../images/user-3.jpg';
 import photo4 from '../../images/user-4.jpg';
 import photo5 from '../../images/user-5.jpg';
@@ -41,7 +43,37 @@ const Collection = () => {
         </div>
       </div>
       <div className="user-reviews">
-         user reviews
+         <figure className="review">
+           <blockquote className='review__text'>
+             The front desk staff all were professional and pleasant. Dining room for breakfast were nice and pleasant. The piano was nice but too loud. We do not know when will be our next visit to Prague but sure we shall return to this lovely place. Already recommended your hotel to a few of our friends.
+           </blockquote>
+           <figcaption className="review__user">
+              <img src={photo1} alt="user1" className="review__photo"/>
+              <div className="review__user-box">
+                <p className="review__user-name">Arnold Amani</p>
+                <p className="review__user-date">April 4th, 2020</p>
+              </div>
+              <div className="review__rating">8.3</div>
+           </figcaption>
+         </figure>
+
+         <figure className="review">
+           <blockquote className='review__text'>
+             Lovely hotel. Very comfortable. 10 minute walk to the old town. Breakfast was really good. Would definitely stay again
+           </blockquote>
+           <figcaption className="review__user">
+              <img src={photo2} alt="user2" className="review__photo"/>
+              <div className="review__user-box">
+                <p className="review__user-name">Tessy Wanjiku</p>
+                <p className="review__user-date">June 23rd, 2020</p>
+              </div>
+              <div className="review__rating">9.1</div>
+           </figcaption>
+         </figure>
+         <button className="btn-inline">
+           Show all
+           <span>&rarr;</span>
+         </button>
       </div>
     </div>
   )

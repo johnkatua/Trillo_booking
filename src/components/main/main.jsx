@@ -6,6 +6,7 @@ import hotel2 from '../../images/hotel-2.jpg';
 import hotel3 from '../../images/hotel-3.jpg';
 
 import Collection from '../../pages/collection/collection';
+import Action from '../../pages/action/action';
 
 import { ReactComponent as Star} from '../../images/SVG/star.svg';
 import { ReactComponent as Location} from '../../images/SVG/location-pin.svg';
@@ -59,6 +60,7 @@ const Main = () =>{
         </div>
       </div>
       <Collection />
+      <Action />
     </main >
   )
 };
